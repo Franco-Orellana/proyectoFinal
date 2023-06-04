@@ -1,9 +1,9 @@
 <?php 
-    $host = "containers-us-west-165.railway.app";
+    $host = "containers-us-west-16.railway.app";
     $database = "inmobiliaria";
     $usuario = "root";
-    $contrasenia = "e0WuMthO3MAc9wJcU5ge";
-    $port = "6608";
+    $contrasenia = "As2tJUERfJ6nQNnERg19";
+    $port = "6469";
     $dbname ="railway";
 
     try {
