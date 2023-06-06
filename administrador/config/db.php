@@ -1,10 +1,9 @@
 <?php 
-    $host = "containers-us-west-16.railway.app";
-    $database = "inmobiliaria";
-    $usuario = "root";
-    $contrasenia = "As2tJUERfJ6nQNnERg19";
-    $port = "6469";
-    $dbname ="railway";
+    $host = $_ENV["DB_HOST"];
+    $usuario = $_ENV["DB_USER"];
+    $contrasenia = $_ENV["DB_PASSWORD"];
+    $database = $_ENV["DB_NAME"];
+    $port = $_ENV["DB_PORT"];
 
     try {
         $conexion = new PDO("mysql:host=$host;dbname=$database", $usuario, $contrasenia);
