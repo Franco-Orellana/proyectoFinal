@@ -1,0 +1,111 @@
+:root {
+    --font-size-lg: clamp(1.76rem, 4.88vw + 0.54rem, 4.44rem);
+}
+
+
+header {
+    position: absolute;
+    padding: 25px 7vw;
+    background-color: var(--color-header);
+}
+
+main {
+    padding-bottom: 0%;
+}        
+
+.productos{ 
+    padding-top: 0;
+}
+
+.productos__grid{
+    margin: 40px auto;
+}
+
+.breadcrumb {
+    max-width: calc(390px * 3 + 80px) !important;
+    margin: auto !important;
+}
+
+.tipo__propiedad {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    max-width: calc(390px * 3 + 80px) !important;
+    margin: auto !important;
+}
+
+.form-select {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.4rem;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0, .6);
+}
+
+.productos__sin__datos {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: calc(390px * 3 + 80px) !important;
+}
+
+.productos__sin__datos__leyenda {
+    font-weight: bolder;
+    font-size: var(--font-size-lg);
+}
+
+
+
+@media only screen and (min-width: 425px){
+
+    .productos__sin__datos img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 461px){
+
+    .tipo__propiedad > .d-flex {
+        width: 100%;
+    }
+    
+    select[id="orden"] {
+        flex: 1 !important;
+    }
+}
+
+
+
+/* Modal de filtros */
+.form-check-input:checked {
+    background-color: #ff6213 !important;
+    border-color: #ff6213 !important;
+    box-shadow: none;
+}
+
+.form-floating input:focus-visible,
+.form-select:focus {
+    box-shadow: none !important;
+    border: 2px solid var(--color-principal) !important;
+}
+
+.btn-group label  {
+    border-color: rgb(0, 0, 0, .2) !important;
+}
+
+.btn-check:checked +.btn,
+.btn-group label:hover {
+    background-color: #ff6213 !important;
+    color: #fff !important;
+    border-color: #ff6213 !important;
+}
+
+.form-check-input {
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+    border: 1px solid rgb(0, 0, 0, .5) !important;
+}
+
